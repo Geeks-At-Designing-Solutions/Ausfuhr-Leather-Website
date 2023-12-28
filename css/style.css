@@ -16,7 +16,9 @@
 	1.3	Flexbox
 	1.4	Reset
 2.  Helper Css
-3.  Header Section
+3.  
+
+Section
 4.  Hero Section
 5.  Banner Section
 6.  Product Section
@@ -487,7 +489,9 @@ ol {
 	padding: 3px 0;
 }
 
-.header__menu ul li a:after {
+
+
+/* .header__menu ul li a:after {
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -501,7 +505,76 @@ ol {
 	-webkit-transform: scale(0);
 	-ms-transform: scale(0);
 	transform: scale(0);
+} */
+
+/* .header__menu ul li a:after {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #e53637;
+	content: "";
+	-webkit-transition: all, 0.5s;
+	-o-transition: all, 0.5s;
+	transition: all, 0.5s;
+	-webkit-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+} */
+
+/* .header__menu ul li a:hover {
+	border-bottom: 2px solid;
+	border-bottom-color: red;
+	
+	
 }
+
+
+.header__menu ul li a.active {
+	border-bottom: 2px solid;
+	border-bottom-color: red;
+	
+	
+} */
+
+.header__menu ul li a {
+	position: relative;
+	text-decoration: none;
+	color: #000; /* Set your desired text color */
+  }
+  
+  .header__menu ul li a::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	
+	background-color: red; /* Set the border color */
+	transition: width 0.4s ease; /* Set the duration and timing function for the transition */
+  }
+  
+  .header__menu ul li a:hover::before,
+  .header__menu ul li a.active::before {
+	width: 100%; /* Expand the border to 100% width on hover or when active */
+  }
+  
+
+
+/* .navbar ul li a {
+	font-size: 18px;
+	color: #111111;
+	display: block;
+	font-weight: 600;
+	position: relative;
+	padding: 3px 0;
+} */
+
+
+
+
 
 .header__nav__option {
 	text-align: right;
@@ -771,12 +844,13 @@ ol {
 .categories__text h2 {
 	color: #b7b7b7;
 	line-height: 72px;
-	font-size: 3spx;
+	font-size: 69px;
 }
 
 .categories__text h2 span {
 	font-weight: 700;
 	color: #111111;
+	font-size: 59px;
 }
 
 .categories__hot__deal {
@@ -2160,11 +2234,11 @@ ol {
 
 .testimonial__text p {
 	color: #111111;
-	font-size: 20px;
+	font-size: 16px;
 	font-style: italic;
 	line-height: 30px;
 	padding-top: 12px;
-	margin-bottom: 25px;
+	/* margin-bottom: 25px; */
 }
 
 .testimonial__author {
@@ -3248,7 +3322,7 @@ ol {
 -----------------------*/
 
 .map {
-	height: 500px;
+	height: 300px;
 }
 
 .map iframe {
@@ -3360,6 +3434,38 @@ ol {
 .contact__form button {
 	letter-spacing: 4px;
 	padding: 14px 35px;
+}
+
+.social-media a{
+	
+	font-size: 18px;
+	display: inline-block;
+	background: #343434;
+	color: #fff;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 4px;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
+}
+
+.social-media a:hover{
+	
+	font-size: 18px;
+	display: inline-block;
+	background: #ffffff;
+	color: #000000;
+	line-height: 1;
+	padding: 8px 0;
+	margin-right: 4px;
+	border-radius: 4px;
+	text-align: center;
+	width: 36px;
+	height: 36px;
+	transition: 0.3s;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/

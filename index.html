@@ -14,6 +14,11 @@
       rel="stylesheet"
     />
 
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <!-- Css Styles -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
@@ -58,40 +63,13 @@
       </div>
       <div id="mobile-menu-wrap"></div>
       <div class="offcanvas__text">
-        <p>Free shipping, 30-day return or refund guarantee.</p>
+        <p>Free shdpping, 30-day return or refund guarantee.</p>
       </div>
     </div>
     <!-- Offcanvas Menu End -->
 
     <!-- Header Section Begin -->
-    <header class="header">
-      <div class="header__top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-7">
-              <div class="header__top__left">
-                <p>Free shipping, 30-day return or refund guarantee.</p>
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-5">
-              <div class="header__top__right">
-                <div class="header__top__links">
-                  <a href="#">Sign in</a>
-                  <a href="#">FAQs</a>
-                </div>
-                <div class="header__top__hover">
-                  <span>Usd <i class="arrow_carrot-down"></i></span>
-                  <ul>
-                    <li>USD</li>
-                    <li>EUR</li>
-                    <li>USD</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <header id="header" class="header fixed-top">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-3">
@@ -99,27 +77,25 @@
               <a href="./index.html"><img src="img/logo.png" alt="" /></a>
             </div>
           </div>
-          <div class="col-lg-6 col-md-6">
-            <nav class="header__menu mobile-menu">
+          <div class="col-lg-9 col-md-9">
+            <nav id="navbar" class="navbar header__menu mobile-menu">
               <ul>
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./shop.html">Shop</a></li>
                 <li>
-                  <a href="#">Pages</a>
-                  <ul class="dropdown">
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./shop-details.html">Shop Details</a></li>
-                    <li><a href="./shopping-cart.html">Shopping Cart</a></li>
-                    <li><a href="./checkout.html">Check Out</a></li>
-                    <li><a href="./blog-details.html">Blog Details</a></li>
-                  </ul>
+                  <a class="scrollto" href="#home">Home</a>
                 </li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contacts</a></li>
+                <li><a class="scrollto" href="#about">About Us</a></li>
+                <li>
+                  <a class="scrollto" href="#products">Products</a>
+                </li>
+                <li>
+                  <a class="scrollto" href="#request">Request for Quotation</a>
+                </li>
+
+                <li><a class="scrollto" href="#contact">Contact</a></li>
               </ul>
             </nav>
           </div>
-          <div class="col-lg-3 col-md-3">
+          <!-- <div class="col-lg-3 col-md-3">
             <div class="header__nav__option">
               <a href="#" class="search-switch"
                 ><img src="img/icon/search.png" alt=""
@@ -130,17 +106,19 @@
               >
               <div class="price">$0.00</div>
             </div>
-          </div>
+          </div> -->
         </div>
-        <div class="canvas__open"><i class="fa fa-bars"></i></div>
+        <div class="canvas__open">
+          <i class="fa fa-bars mobile-nav-toggle"></i>
+        </div>
       </div>
     </header>
     <!-- Header Section End -->
 
     <!-- Hero Section Begin -->
-    <section class="hero">
+    <section class="hero" id="home">
       <div class="hero__slider owl-carousel">
-        <div class="hero__items set-bg" data-setbg="img/hero/hero-1.jpg">
+        <div class="hero__items set-bg" data-setbg="img/hero/hero.jpg">
           <div class="container">
             <div class="row">
               <div class="col-xl-5 col-lg-7 col-md-8">
@@ -153,7 +131,7 @@
                     quality.
                   </p>
                   <a href="#" class="primary-btn"
-                    >Shop now <span class="arrow_right"></span
+                    >Enquire Now <span class="arrow_right"></span
                   ></a>
                   <div class="hero__social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -179,7 +157,7 @@
                     quality.
                   </p>
                   <a href="#" class="primary-btn"
-                    >Shop now <span class="arrow_right"></span
+                    >Enquire Now <span class="arrow_right"></span
                   ></a>
                   <div class="hero__social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -207,7 +185,7 @@
               </div>
               <div class="banner__item__text">
                 <h2>The Quality & Uniqueness</h2>
-                <a href="#">Shop now</a>
+                <a href="#">Enquire</a>
               </div>
             </div>
           </div>
@@ -217,8 +195,8 @@
                 <img src="img/banner/banner-2.jpg" alt="" />
               </div>
               <div class="banner__item__text">
-                <h2>Accessories</h2>
-                <a href="#">Shop now</a>
+                <h2>100% Genuine Leather</h2>
+                <a href="#">Enquire</a>
               </div>
             </div>
           </div>
@@ -228,8 +206,8 @@
                 <img src="img/banner/banner-3.jpg" alt="" />
               </div>
               <div class="banner__item__text">
-                <h2>Shoes Spring 2030</h2>
-                <a href="#">Shop now</a>
+                <h2>400+ extensive collections</h2>
+                <a href="#">Enquire</a>
               </div>
             </div>
           </div>
@@ -238,10 +216,262 @@
     </section>
     <!-- Banner Section End -->
 
-    <!-- Product Section Begin -->
-    <section class="product spad">
+    <!-- About Section Begin -->
+    <section id="about" class="about">
       <div class="container">
         <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <span>ABOUT</span>
+              <h2>About Us</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="about__pic">
+              <img src="img/about/about-us.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="about__item">
+              <h4>Who We Are ?</h4>
+              <p>
+                Ausfuhr international Pvt Ltd is a Government of India
+                recognised Leather Goods Export House in India. Established in
+                the 2023s, We are among best Leather Companies In India. We
+                taking pride in Offering 100% Genuine Leather.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="about__item">
+              <h4>Where Are We ?</h4>
+              <p>
+                Our office is in Kerala India. In terms of quality, we aim to be
+                among the Best Indian leather exporter.In addition to using the
+                latest technology Ausfuhr international exim Pvt Ltd products
+                are aThroughout our history, we have continued to work hard and
+                devote ourselves to meeting and exceeding customer expectations
+                through quality leather goods.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="about__item">
+              <h4>Why Choose Us ?</h4>
+              <p>
+                We have 400+ extensive collections of High-Quality Genuine
+                leather & Vegan Leather products samples. In order to satisfy
+                customer needs for Customise Handbags, Wallets, Belts and Other
+                Small Accessories in various colours, sizes, patterns, and
+                designs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Testimonial Section Begin -->
+    <section class="testimonial">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-6 p-0">
+            <div class="testimonial__text">
+              <!-- <span class="icon_question"></span> -->
+              <p style="text-align: left">
+                Leather goods developed by us look not only rich in color and
+                texture but are also functionally appealing. Each generation of
+                research materials begins with a striving in Ausfuhr
+                international exim warehouse dedicated to excellence to strive
+                for the highest quality product consistently and innovative
+                production processes while ensuring the highest quality of
+                customer service.
+              </p>
+              <!-- <div class="testimonial__author">
+                <div class="testimonial__author__pic">
+                  <img src="img/about/testimonial-author.jpg" alt="" />
+                </div>
+                <div class="testimonial__author__text">
+                  <h5>Augusta Schultz</h5>
+                  <p>Fashion Design</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="col-lg-6 p-0">
+            <div
+              class="testimonial__pic set-bg"
+              data-setbg="img/about/testimonial-pic.jpg"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Section Begin -->
+    <section class="counter spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter__item">
+              <div class="counter__item__number">
+                <h2 class="cn_num">102</h2>
+              </div>
+              <span>Our <br />Clients</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter__item">
+              <div class="counter__item__number">
+                <h2 class="cn_num">30</h2>
+              </div>
+              <span>Total <br />Categories</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter__item">
+              <div class="counter__item__number">
+                <h2 class="cn_num">102</h2>
+              </div>
+              <span>In <br />Country</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="counter__item">
+              <div class="counter__item__number">
+                <h2 class="cn_num">98</h2>
+                <strong>%</strong>
+              </div>
+              <span>Happy <br />Customer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Section End -->
+
+    <!-- Team Section Begin -->
+    <!-- <section class="team spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <span>Our Team</span>
+              <h2>Meet Our Team</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="team__item">
+              <img src="img/about/team-1.jpg" alt="" />
+              <h4>John Smith</h4>
+              <span>Fashion Design</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="team__item">
+              <img src="img/about/team-2.jpg" alt="" />
+              <h4>Christine Wise</h4>
+              <span>C.E.O</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="team__item">
+              <img src="img/about/team-3.jpg" alt="" />
+              <h4>Sean Robbins</h4>
+              <span>Manager</span>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="team__item">
+              <img src="img/about/team-4.jpg" alt="" />
+              <h4>Lucy Myers</h4>
+              <span>Delivery</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Team Section End -->
+
+    <!-- Client Section Begin -->
+    <!-- <section class="clients spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <span>Partner</span>
+              <h2>Happy Clients</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+            <a href="#" class="client__item"
+              ><img src="img/clients/client-1.png" alt=""
+            /></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+            <a href="#" class="client__item"
+              ><img src="img/clients/client-2.png" alt=""
+            /></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+            <a href="#" class="client__item"
+              ><img src="img/clients/client-3.png" alt=""
+            /></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+            <a href="#" class="client__item"
+              ><img src="img/clients/client-4.png" alt=""
+            /></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+            <a href="#" class="client__item"
+              ><img src="img/clients/client-5.png" alt=""
+            /></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+            <a href="#" class="client__item"
+              ><img src="img/clients/client-6.png" alt=""
+            /></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+            <a href="#" class="client__item"
+              ><img src="img/clients/client-7.png" alt=""
+            /></a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-4 col-6">
+            <a href="#" class="client__item"
+              ><img src="img/clients/client-8.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- Client Section End -->
+
+    <!-- Product Section Begin -->
+    <section id="products" class="product spad" style="margin-top: 80px">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <span>PRODUCTS</span>
+              <h2>Our Products</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="row">
           <div class="col-lg-12">
             <ul class="filter__controls">
               <li class="active" data-filter="*">Best Sellers</li>
@@ -249,7 +479,8 @@
               <li data-filter=".hot-sales">Hot Sales</li>
             </ul>
           </div>
-        </div>
+        </div> -->
+
         <div class="row product__filter">
           <div
             class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix new-arrivals"
@@ -276,15 +507,15 @@
                 </ul>
               </div>
               <div class="product__item__text">
-                <h6>Piqué Biker Jacket</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-                <div class="rating">
+                <h6>Leather Jacket</h6>
+                <a href="#" class="add-cart">Enquire</a>
+                <!-- <div class="rating">
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
-                </div>
+                </div> -->
                 <h5>$67.24</h5>
                 <div class="product__color__select">
                   <label for="pc-1">
@@ -325,14 +556,14 @@
               </div>
               <div class="product__item__text">
                 <h6>Piqué Biker Jacket</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-                <div class="rating">
+                <a href="#" class="add-cart">Enquire</a>
+                <!-- <div class="rating">
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
-                </div>
+                </div> -->
                 <h5>$67.24</h5>
                 <div class="product__color__select">
                   <label for="pc-4">
@@ -374,14 +605,14 @@
               </div>
               <div class="product__item__text">
                 <h6>Multi-pocket Chest Bag</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-                <div class="rating">
+                <a href="#" class="add-cart">Enquire</a>
+                <!-- <div class="rating">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star-o"></i>
-                </div>
+                </div> -->
                 <h5>$43.48</h5>
                 <div class="product__color__select">
                   <label for="pc-7">
@@ -422,14 +653,8 @@
               </div>
               <div class="product__item__text">
                 <h6>Diagonal Textured Cap</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-                <div class="rating">
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div>
+                <a href="#" class="add-cart">Enquire</a>
+
                 <h5>$60.9</h5>
                 <div class="product__color__select">
                   <label for="pc-10">
@@ -470,14 +695,8 @@
               </div>
               <div class="product__item__text">
                 <h6>Lether Backpack</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-                <div class="rating">
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div>
+                <a href="#" class="add-cart">Enquire</a>
+
                 <h5>$31.37</h5>
                 <div class="product__color__select">
                   <label for="pc-13">
@@ -519,14 +738,8 @@
               </div>
               <div class="product__item__text">
                 <h6>Ankle Boots</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-                <div class="rating">
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star"></i>
-                  <i class="fa fa-star-o"></i>
-                </div>
+                <a href="#" class="add-cart">Enquire</a>
+
                 <h5>$98.49</h5>
                 <div class="product__color__select">
                   <label for="pc-16">
@@ -567,14 +780,8 @@
               </div>
               <div class="product__item__text">
                 <h6>T-shirt Contrast Pocket</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-                <div class="rating">
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div>
+                <a href="#" class="add-cart">Enquire</a>
+
                 <h5>$49.66</h5>
                 <div class="product__color__select">
                   <label for="pc-19">
@@ -615,14 +822,8 @@
               </div>
               <div class="product__item__text">
                 <h6>Basic Flowing Scarf</h6>
-                <a href="#" class="add-cart">+ Add To Cart</a>
-                <div class="rating">
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div>
+                <a href="#" class="add-cart">Enquire</a>
+
                 <h5>$26.28</h5>
                 <div class="product__color__select">
                   <label for="pc-22">
@@ -644,7 +845,7 @@
     <!-- Product Section End -->
 
     <!-- Categories Section Begin -->
-    <section class="categories spad">
+    <section id="request" class="categories spad">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
@@ -664,9 +865,9 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 offset-lg-1">
+          <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
             <div class="categories__deal__countdown">
-              <span>Deal Of The Week</span>
+              <span>Request for Quotation</span>
               <h3>
                 If you have a leather product design, upload it with all the
                 details
@@ -691,7 +892,7 @@
                 </div>
               </div> -->
 
-              <a href="#" class="primary-btn mt-3">Shop now</a>
+              <a href="#" class="primary-btn mt-3">Enquire Now</a>
             </div>
           </div>
         </div>
@@ -753,8 +954,8 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <span>Latest News</span>
-              <h2>Fashion New Trends</h2>
+              <span>Service Process</span>
+              <h2>Our Service Process</h2>
             </div>
           </div>
         </div>
@@ -771,7 +972,7 @@
                   We are committed to providing our customers with Just in Time
                   delivery through professional planning.</span
                 >
-                <a href="#">Read More</a>
+                <a href="#">Enquire</a>
               </div>
             </div>
           </div>
@@ -780,7 +981,7 @@
             <div class="blog__item">
               <div
                 class="blog__item__pic set-bg"
-                data-setbg="img/blog/blog-1.jpg"
+                data-setbg="img/blog/blog-2.jpg"
               ></div>
               <div class="blog__item__text">
                 <h5>Extensive Collection</h5>
@@ -788,7 +989,7 @@
                   We export a wide collections of leather products , each with
                   its unique design and features.</span
                 >
-                <a href="#">Read More</a>
+                <a href="#">Enquire</a>
               </div>
             </div>
           </div>
@@ -797,7 +998,7 @@
             <div class="blog__item">
               <div
                 class="blog__item__pic set-bg"
-                data-setbg="img/blog/blog-1.jpg"
+                data-setbg="img/blog/blog-3.jpg"
               ></div>
               <div class="blog__item__text">
                 <h5>Handcrafted Construction</h5>
@@ -805,7 +1006,7 @@
                   All the leather products are made by our experienced and
                   skilled craftsmen. Because we stand behind our leather.</span
                 >
-                <a href="#">Read More</a>
+                <a href="#">Enquire</a>
               </div>
             </div>
           </div>
@@ -813,6 +1014,88 @@
       </div>
     </section>
     <!-- Latest Blog Section End -->
+
+    <!-- Map Begin -->
+
+    <div id="contact" class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <span>CONTACT</span>
+            <h2>Contact Us</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="map col-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111551.9926412813!2d-90.27317134641879!3d38.606612219170856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1597926938024!5m2!1sen!2sbd"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Map End -->
+
+    <!-- Contact Section Begin -->
+    <section class="contact spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6">
+            <div class="contact__text">
+              <div class="section-title">
+                <!-- <span>Information</span> -->
+                <h2>Contact Us</h2>
+                <p>
+                  As you might expect of a company that began as a high-end
+                  interiors contractor, we pay strict attention.
+                </p>
+              </div>
+              <ul>
+                <li>
+                  <h4>Address</h4>
+                  <p>
+                    TBI, GECBH, Kunnukuzhi <br />
+                    Trivandrum, Kerala
+                  </p>
+                </li>
+                <li>
+                  <h4>Mail Us</h4>
+                  <p>
+                    ausfuhrinternational@gmail.com <br />+91 62822 89819 <br />
+                    +91 97453 49656
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="contact__form">
+              <form action="#">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <input type="text" placeholder="Name" />
+                  </div>
+                  <div class="col-lg-6">
+                    <input type="text" placeholder="Email" />
+                  </div>
+                  <div class="col-lg-12">
+                    <textarea placeholder="Message"></textarea>
+                    <button type="submit" class="site-btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section End -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -824,20 +1107,37 @@
                 <a href="#"><img src="img/footer-logo.png" alt="" /></a>
               </div>
               <p>
-                The customer is at the heart of our unique business model, which
-                includes design.
+                TBI, GECBH, Kunnukuzhi <br />
+                Trivandrum, Kerala
               </p>
-              <a href="#"><img src="img/payment.png" alt="" /></a>
+            </div>
+
+            <div class="social-media mb-4">
+              <a href="https://www.facebook.com/Sreevaidyanad/" class="facebook"
+                ><i class="bx bxl-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/sreevaidya.nadhapuram/"
+                class="instagram"
+                ><i class="bx bxl-instagram"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/@sreejithr.3232/"
+                class="google-plus"
+                ><i class="bx bxl-youtube"></i
+              ></a>
             </div>
           </div>
           <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
             <div class="footer__widget">
-              <h6>Shopping</h6>
+              <h6>Useful Links</h6>
               <ul>
-                <li><a href="#">Clothing Store</a></li>
-                <li><a href="#">Trending Shoes</a></li>
-                <li><a href="#">Accessories</a></li>
-                <li><a href="#">Sale</a></li>
+                <li><a class="scrollto" href="#home">Home</a></li>
+                <li><a class="scrollto" href="#about">About Us</a></li>
+                <li><a class="scrollto" href="#products">Products</a></li>
+                <li>
+                  <a class="scrollto" href="#request">Request a Quotation</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -876,12 +1176,12 @@
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
               <p>
                 Copyright ©
-                <script>
+                <!-- <script>
                   document.write(new Date().getFullYear());
-                </script>
-                2020 All rights reserved | This template is made with
-                <i class="fa fa-heart-o" aria-hidden="true"></i> by
-                <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                </script> -->
+                2024 All rights reserved | Developed by
+                <!-- <i class="fa fa-heart-o" aria-hidden="true"></i> by -->
+                <a href="https://gadssolutions.in" target="_blank">GADS LLP</a>
               </p>
               <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
             </div>
@@ -912,6 +1212,8 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/scroll.js"></script>
   </body>
 </html>
