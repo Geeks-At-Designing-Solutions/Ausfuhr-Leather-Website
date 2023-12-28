@@ -3903,13 +3903,36 @@ ol {
 /* Small Device = 320px */
 
 @media only screen and (max-width: 479px) {
+
+	.set-bg-1 {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: -650px 0px;
+
+		
+	}
+
+	.set-bg-2 {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: -580px 0px;
+
+		
+	}
+
+	.hero-p-tag{
+		margin-right: 120px;
+	}
+	
 	.cart__total {
 		padding: 35px 30px 40px;
 	}
 	.hero__items {
 		height: auto;
+		
 		padding-top: 130px;
 		padding-bottom: 40px;
+		
 	}
 	.hero__text h2 {
 		font-size: 36px;
