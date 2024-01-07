@@ -53,14 +53,14 @@
           </ul>
         </div>
       </div>
-      <div class="offcanvas__nav__option">
+      <!-- <div class="offcanvas__nav__option">
         <a href="#" class="search-switch"
           ><img src="img/icon/search.png" alt=""
         /></a>
         <a href="#"><img src="img/icon/heart.png" alt="" /></a>
         <a href="#"><img src="img/icon/cart.png" alt="" /> <span>0</span></a>
         <div class="price">$0.00</div>
-      </div>
+      </div> -->
       <div id="mobile-menu-wrap"></div>
       <div class="offcanvas__text">
         <p>Free shdpping, 30-day return or refund guarantee.</p>
@@ -129,8 +129,8 @@
                     Elevate your style with 'Leather Luxe'—crafted excellence in
                     global leather exports, delivering luxury worldwide.
                   </p>
-                  <a href="#" class="primary-btn"
-                    >Enquire Now <span class="arrow_right"></span
+                  <a href="#banner" class="primary-btn scrollto"
+                    >Read More <span class="arrow_right"></span
                   ></a>
                   <div class="hero__social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -154,12 +154,11 @@
                   <h6>Artistry in Leather</h6>
                   <h2>Elevate Your Style, Worldwide</h2>
                   <p class="hero-p-tag">
-                    Elevate style with our premier leather exports. Explore
-                    finely crafted goods, where luxury meets quality. Unrivaled
-                    sophistication awaits you.
+                    Elevate your style with our premier leather exports—crafted
+                    for unrivaled sophistication and lasting quality.
                   </p>
-                  <a href="#" class="primary-btn"
-                    >Enquire Now <span class="arrow_right"></span
+                  <a href="#banner" class="primary-btn scrollto"
+                    >Read More <span class="arrow_right"></span
                   ></a>
                   <div class="hero__social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -177,7 +176,7 @@
     <!-- Hero Section End -->
 
     <!-- Banner Section Begin -->
-    <section class="banner spad">
+    <section id="banner" class="banner spad">
       <div class="container">
         <div class="row">
           <div class="col-lg-7 offset-lg-4">
@@ -187,7 +186,7 @@
               </div>
               <div class="banner__item__text">
                 <h2>The Quality & Uniqueness</h2>
-                <a href="#">Enquire</a>
+                <a href="#enquire" class="scrollto">Enquire</a>
               </div>
             </div>
           </div>
@@ -197,8 +196,8 @@
                 <img src="img/banner/banner-2.jpg" alt="" />
               </div>
               <div class="banner__item__text">
-                <h2>100% Genuine Leather</h2>
-                <a href="#">Enquire</a>
+                <h2>100% Pure Leather</h2>
+                <a href="#enquire" class="scrollto">Enquire</a>
               </div>
             </div>
           </div>
@@ -209,7 +208,7 @@
               </div>
               <div class="banner__item__text">
                 <h2>400+ extensive collections</h2>
-                <a href="#">Enquire</a>
+                <a href="#enquire" class="scrollto">Enquire</a>
               </div>
             </div>
           </div>
@@ -317,7 +316,7 @@
     <!-- Testimonial Section End -->
 
     <!-- Counter Section Begin -->
-    <section class="counter spad">
+    <!-- <section class="counter spad">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-6">
@@ -355,7 +354,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <!-- Counter Section End -->
 
     <!-- Team Section Begin -->
@@ -461,6 +460,7 @@
     <!-- Client Section End -->
 
     <!-- Product Section Begin -->
+
     <section id="products" class="product spad" style="margin-top: 80px">
       <div class="container">
         <div class="row">
@@ -492,43 +492,15 @@
                 data-setbg="img/product/product-1.jpg"
               >
                 <span class="label">New</span>
-                <ul class="product__hover">
-                  <li>
-                    <a href="#"><img src="img/icon/heart.png" alt="" /></a>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><img src="img/icon/compare.png" alt="" />
-                      <span>Compare</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"><img src="img/icon/search.png" alt="" /></a>
-                  </li>
-                </ul>
               </div>
               <div class="product__item__text">
                 <h6>Leather Shoes</h6>
-                <a href="#" class="add-cart">Enquire</a>
-                <!-- <div class="rating">
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                  <i class="fa fa-star-o"></i>
-                </div> -->
-                <h5>$67.24</h5>
-                <div class="product__color__select">
-                  <label for="pc-1">
-                    <input type="radio" id="pc-1" />
-                  </label>
-                  <label class="active black" for="pc-2">
-                    <input type="radio" id="pc-2" />
-                  </label>
-                  <label class="grey" for="pc-3">
-                    <input type="radio" id="pc-3" />
-                  </label>
-                </div>
+                <a
+                  href="#enquire"
+                  class="add-cart scrollto"
+                  onclick="changeSelectedItem(1)"
+                  >Enquire</a
+                >
               </div>
             </div>
           </div>
@@ -540,7 +512,7 @@
                 class="product__item__pic set-bg"
                 data-setbg="img/product/product-2.jpg"
               >
-                <ul class="product__hover">
+                <!-- <ul class="product__hover">
                   <li>
                     <a href="#"><img src="img/icon/heart.png" alt="" /></a>
                   </li>
@@ -553,11 +525,16 @@
                   <li>
                     <a href="#"><img src="img/icon/search.png" alt="" /></a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
               <div class="product__item__text">
                 <h6>Leather Belt</h6>
-                <a href="#" class="add-cart">Enquire</a>
+                <a
+                  href="#enquire"
+                  class="add-cart scrollto"
+                  onclick="changeSelectedItem(2)"
+                  >Enquire</a
+                >
                 <!-- <div class="rating">
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
@@ -565,7 +542,7 @@
                   <i class="fa fa-star-o"></i>
                   <i class="fa fa-star-o"></i>
                 </div> -->
-                <h5>$67.24</h5>
+                <!-- <h5>$67.24</h5>
                 <div class="product__color__select">
                   <label for="pc-4">
                     <input type="radio" id="pc-4" />
@@ -576,7 +553,7 @@
                   <label class="grey" for="pc-6">
                     <input type="radio" id="pc-6" />
                   </label>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -588,8 +565,8 @@
                 class="product__item__pic set-bg"
                 data-setbg="img/product/product-3.jpg"
               >
-                <span class="label">Sale</span>
-                <ul class="product__hover">
+                <span class="label">PREMIUM</span>
+                <!-- <ul class="product__hover">
                   <li>
                     <a href="#"><img src="img/icon/heart.png" alt="" /></a>
                   </li>
@@ -602,11 +579,16 @@
                   <li>
                     <a href="#"><img src="img/icon/search.png" alt="" /></a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
               <div class="product__item__text">
                 <h6>Multi-pocket Wallet</h6>
-                <a href="#" class="add-cart">Enquire</a>
+                <a
+                  href="#enquire"
+                  class="add-cart scrollto"
+                  onclick="changeSelectedItem(3)"
+                  >Enquire</a
+                >
                 <!-- <div class="rating">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -614,7 +596,7 @@
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star-o"></i>
                 </div> -->
-                <h5>$43.48</h5>
+                <!-- <h5>$43.48</h5>
                 <div class="product__color__select">
                   <label for="pc-7">
                     <input type="radio" id="pc-7" />
@@ -625,7 +607,7 @@
                   <label class="grey" for="pc-9">
                     <input type="radio" id="pc-9" />
                   </label>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -637,7 +619,7 @@
                 class="product__item__pic set-bg"
                 data-setbg="img/product/product-4.jpg"
               >
-                <ul class="product__hover">
+                <!-- <ul class="product__hover">
                   <li>
                     <a href="#"><img src="img/icon/heart.png" alt="" /></a>
                   </li>
@@ -650,13 +632,18 @@
                   <li>
                     <a href="#"><img src="img/icon/search.png" alt="" /></a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
               <div class="product__item__text">
                 <h6>Quality Material</h6>
-                <a href="#" class="add-cart">Enquire</a>
+                <a
+                  href="#enquire"
+                  class="add-cart scrollto"
+                  onclick="changeSelectedItem(4)"
+                  >Enquire</a
+                >
 
-                <h5>$60.9</h5>
+                <!-- <h5>$60.9</h5>
                 <div class="product__color__select">
                   <label for="pc-10">
                     <input type="radio" id="pc-10" />
@@ -667,7 +654,7 @@
                   <label class="grey" for="pc-12">
                     <input type="radio" id="pc-12" />
                   </label>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -679,7 +666,7 @@
                 class="product__item__pic set-bg"
                 data-setbg="img/product/product-5.jpg"
               >
-                <ul class="product__hover">
+                <!-- <ul class="product__hover">
                   <li>
                     <a href="#"><img src="img/icon/heart.png" alt="" /></a>
                   </li>
@@ -692,13 +679,18 @@
                   <li>
                     <a href="#"><img src="img/icon/search.png" alt="" /></a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
               <div class="product__item__text">
                 <h6>Lether Backpack</h6>
-                <a href="#" class="add-cart">Enquire</a>
+                <a
+                  href="#enquire"
+                  class="add-cart scrollto"
+                  onclick="changeSelectedItem(5)"
+                  >Enquire</a
+                >
 
-                <h5>$31.37</h5>
+                <!-- <h5>$31.37</h5>
                 <div class="product__color__select">
                   <label for="pc-13">
                     <input type="radio" id="pc-13" />
@@ -709,7 +701,7 @@
                   <label class="grey" for="pc-15">
                     <input type="radio" id="pc-15" />
                   </label>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -721,8 +713,8 @@
                 class="product__item__pic set-bg"
                 data-setbg="img/product/product-6.jpg"
               >
-                <span class="label">Sale</span>
-                <ul class="product__hover">
+                <span class="label">Best Seller</span>
+                <!-- <ul class="product__hover">
                   <li>
                     <a href="#"><img src="img/icon/heart.png" alt="" /></a>
                   </li>
@@ -735,12 +727,17 @@
                   <li>
                     <a href="#"><img src="img/icon/search.png" alt="" /></a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
               <div class="product__item__text">
                 <h6>Variety Designs</h6>
-                <a href="#" class="add-cart">Enquire</a>
-
+                <a
+                  href="#enquire"
+                  class="add-cart scrollto"
+                  onclick="changeSelectedItem(6)"
+                  >Enquire</a
+                >
+                <!-- 
                 <h5>$98.49</h5>
                 <div class="product__color__select">
                   <label for="pc-16">
@@ -752,7 +749,7 @@
                   <label class="grey" for="pc-18">
                     <input type="radio" id="pc-18" />
                   </label>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -764,7 +761,7 @@
                 class="product__item__pic set-bg"
                 data-setbg="img/product/product-7.jpg"
               >
-                <ul class="product__hover">
+                <!-- <ul class="product__hover">
                   <li>
                     <a href="#"><img src="img/icon/heart.png" alt="" /></a>
                   </li>
@@ -777,13 +774,18 @@
                   <li>
                     <a href="#"><img src="img/icon/search.png" alt="" /></a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
               <div class="product__item__text">
                 <h6>Side Bag</h6>
-                <a href="#" class="add-cart">Enquire</a>
+                <a
+                  href="#enquire"
+                  class="add-cart scrollto"
+                  onclick="changeSelectedItem(7)"
+                  >Enquire</a
+                >
 
-                <h5>$49.66</h5>
+                <!-- <h5>$49.66</h5>
                 <div class="product__color__select">
                   <label for="pc-19">
                     <input type="radio" id="pc-19" />
@@ -794,7 +796,7 @@
                   <label class="grey" for="pc-21">
                     <input type="radio" id="pc-21" />
                   </label>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -806,7 +808,7 @@
                 class="product__item__pic set-bg"
                 data-setbg="img/product/product-8.jpg"
               >
-                <ul class="product__hover">
+                <!-- <ul class="product__hover">
                   <li>
                     <a href="#"><img src="img/icon/heart.png" alt="" /></a>
                   </li>
@@ -819,13 +821,18 @@
                   <li>
                     <a href="#"><img src="img/icon/search.png" alt="" /></a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
               <div class="product__item__text">
                 <h6>Leather Belt</h6>
-                <a href="#" class="add-cart">Enquire</a>
+                <a
+                  href="#enquire"
+                  class="add-cart scrollto"
+                  onclick="changeSelectedItem(8)"
+                  >Enquire</a
+                >
 
-                <h5>$26.28</h5>
+                <!-- <h5>$26.28</h5>
                 <div class="product__color__select">
                   <label for="pc-22">
                     <input type="radio" id="pc-22" />
@@ -836,7 +843,7 @@
                   <label class="grey" for="pc-24">
                     <input type="radio" id="pc-24" />
                   </label>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -868,7 +875,7 @@
           </div>
           <div class="col-lg-4 offset-lg-1 d-flex align-items-center">
             <div class="categories__deal__countdown">
-              <span>Send Enquiry</span>
+              <span>Request now</span>
               <h3>
                 If you have a leather product design, upload it with all the
                 details
@@ -893,7 +900,7 @@
                 </div>
               </div> -->
 
-              <a href="#" class="primary-btn mt-3">Enquire Now</a>
+              <a href="#enquire" class="primary-btn mt-3 scrollto">Request</a>
             </div>
           </div>
         </div>
@@ -973,7 +980,7 @@
                   We are committed to providing our customers with Just in Time
                   delivery through professional planning.</span
                 >
-                <a href="#">Enquire</a>
+                <a href="#enquire" class="scrollto">Enquire</a>
               </div>
             </div>
           </div>
@@ -990,7 +997,7 @@
                   We export a wide collections of leather products , each with
                   its unique design and features.</span
                 >
-                <a href="#">Enquire</a>
+                <a href="#enquire" class="scrollto">Enquire</a>
               </div>
             </div>
           </div>
@@ -1007,7 +1014,7 @@
                   All the leather products are made by our experienced and
                   skilled craftsmen. Because we stand behind our leather.</span
                 >
-                <a href="#">Enquire</a>
+                <a href="#enquire" class="scrollto">Enquire</a>
               </div>
             </div>
           </div>
@@ -1030,7 +1037,9 @@
       <div class="row">
         <div class="map col-12">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111551.9926412813!2d-90.27317134641879!3d38.606612219170856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1597926938024!5m2!1sen!2sbd"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31559.05047405928!2d76.9592384348241!3d8.607392838972991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05b81a8bcfb02f%3A0xa992d4b3ab376b61!2sNedumangad%2C%20Kerala!5e0!3m2!1sen!2sin!4v1703952213434!5m2!1sen!2sin"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
             height="300"
             style="border: 0"
             allowfullscreen=""
@@ -1044,7 +1053,7 @@
     <!-- Map End -->
 
     <!-- Contact Section Begin -->
-    <section class="contact spad">
+    <section id="enquire" class="contact spad">
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6">
@@ -1053,16 +1062,17 @@
                 <!-- <span>Information</span> -->
                 <h2>Contact Us</h2>
                 <p>
-                  As you might expect of a company that began as a high-end
-                  interiors contractor, we pay strict attention.
+                  For inquiries about our top-tier leather exports, contact
+                  Ausfuhr International. Elevate your style with quality
+                  craftsmanship and unmatched sophistication.
                 </p>
               </div>
               <ul>
                 <li>
                   <h4>Address</h4>
                   <p>
-                    TBI, GECBH, Kunnukuzhi <br />
-                    Trivandrum, Kerala
+                    Karimalakkode Building <br />
+                    Nedumangad, Trivandrum, Kerala, India
                   </p>
                 </li>
                 <li>
@@ -1077,16 +1087,62 @@
           </div>
           <div class="col-lg-6 col-md-6">
             <div class="contact__form">
-              <form action="#">
+              <form
+                action=""
+                method="post"
+                role="form"
+                class="contact-form"
+                name="contact-form"
+                id="contact-form"
+              >
                 <div class="row">
                   <div class="col-lg-6">
-                    <input type="text" placeholder="Name" />
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      placeholder="Your Name"
+                      required=""
+                    />
                   </div>
                   <div class="col-lg-6">
-                    <input type="text" placeholder="Email" />
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      placeholder="Your Email"
+                      required=""
+                    />
                   </div>
                   <div class="col-lg-12">
-                    <textarea placeholder="Message"></textarea>
+                    <select
+                      name="service-type"
+                      id="selectdrop"
+                      class="w-100 mb-4"
+                    >
+                      <option value="">Select Product</option>
+                      <option value="Leather Shoes">Leather Shoes</option>
+                      <option value="Leather Belt">Leather Belt</option>
+                      <option value="Multi-pocket Wallet">
+                        Multi-pocket Wallet
+                      </option>
+                      <option value="Quality Material">Quality Material</option>
+                      <option value="Leather Backpack">Leather Backpack</option>
+                      <option value="Variety Designs">Variety Designs</option>
+                      <option value="Side Bag">Side Bag</option>
+                      <option value="Leather Product">Leather Product</option>
+                    </select>
+                  </div>
+                  <div class="col-lg-12">
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      rows="7"
+                      placeholder="Message"
+                      required=""
+                    ></textarea>
                     <button type="submit" class="site-btn">Send Message</button>
                   </div>
                 </div>
@@ -1108,8 +1164,8 @@
                 <a href="#"><img src="img/footer-logo.png" alt="" /></a>
               </div>
               <p>
-                TBI, GECBH, Kunnukuzhi <br />
-                Trivandrum, Kerala
+                Nedumangad Trivandrum <br />
+                Kerala India <br />
               </p>
             </div>
 
@@ -1144,23 +1200,31 @@
           </div>
           <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
             <div class="footer__widget">
-              <h6>Export</h6>
+              <h6>Our Products</h6>
               <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Payment Methods</a></li>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="#">Return & Exchanges</a></li>
+                <li><a class="scrollto" href="#products">Leather Shoes</a></li>
+                <li><a class="scrollto" href="#products">Leather Belt</a></li>
+                <li>
+                  <a class="scrollto" href="#products">Multi-pocket Wallet</a>
+                </li>
+                <li>
+                  <a class="scrollto" href="#products">Quality Material</a>
+                </li>
               </ul>
             </div>
           </div>
           <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
             <div class="footer__widget">
-              <h6>Export</h6>
+              <h6>Our Products</h6>
               <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Payment Methods</a></li>
-                <li><a href="#">Delivery</a></li>
-                <li><a href="#">Return & Exchanges</a></li>
+                <li>
+                  <a class="scrollto" href="#products">Lether Backpack</a>
+                </li>
+                <li>
+                  <a class="scrollto" href="#products">Variety Designs</a>
+                </li>
+                <li><a class="scrollto" href="#products"> Side Bag</a></li>
+                <li><a class="scrollto" href="#products">Leather Belt</a></li>
               </ul>
             </div>
           </div>
@@ -1198,6 +1262,15 @@
     <!-- Search End -->
 
     <!-- Js Plugins -->
+
+    <script>
+      function changeSelectedItem(val) {
+        document.getElementById("selectdrop").selectedIndex = val;
+        console.log(val);
+        return false;
+      }
+    </script>
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
