@@ -13,6 +13,11 @@
 
 (function ($) {
 
+    $("#loadit").hide();
+    $("#submit-sucess").hide();
+    $("#appointment-spinner").hide();
+    $("#appointment-success-msg").hide();
+
     /*------------------
         Preloader
     --------------------*/
@@ -38,6 +43,31 @@
             var mixer = mixitup(containerEl);
         }
     });
+
+
+    $("#contact-form").submit((e) => {
+        e.preventDefault();
+
+        $("#loadit").show();
+
+        $.ajax({
+          url: "https://script.google.com/macros/s/AKfycbziwo0O3AM_T4Q_D4bJ8avAMQ4yB5-a67UMNI8y8Y5xarnd-X5Xi2UhrDTqCqvGWIn3zQ/exec",
+          data: $("#contact-form").serialize(),
+
+          method: "POST",
+          success: function (response) {
+            $("#loadit").hide();
+            $("#submit-sucess").show();
+
+            window.location.reload();
+            // window.location.href = "https://google.com";
+          },
+          error: function (err) {
+            $("#loadit").hide();
+            alert("Something went wrong");
+          },
+        });
+      });
 
 
     
