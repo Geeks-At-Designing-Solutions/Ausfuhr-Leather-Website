@@ -3924,6 +3924,16 @@ ol {
 		
 	}
 
+	.insta_hide{
+		display: none;
+		
+	}
+
+	.insta_show{
+		margin-bottom: 15px;
+		
+	}
+
 	.set-bg-2 {
 		background-repeat: no-repeat;
 		background-size: cover;
